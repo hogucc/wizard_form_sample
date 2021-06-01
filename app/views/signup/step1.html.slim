@@ -1,0 +1,4 @@
+= form_with model: @user, url: step2_signup_index_path, method: :get, html: {class: 'first-main__box'} do |f|
+  = f.text_field :nickname, placeholder: '例) 田中太郎'
+  = f.email_field :email, placeholder: 'PC・携帯どちらでも可'
+  = f.submit 'Continue'
